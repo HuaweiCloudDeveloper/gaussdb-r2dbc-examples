@@ -25,7 +25,7 @@ public class SSLConnectionExample {
       CountDownLatch countDownLatch = new CountDownLatch(1);
 
       ConnectionFactory connectionFactory = ConnectionFactories.get(
-          "r2dbc:gaussdb://GaussdbExamples:Gaussdb-Examples-123@139.9.208.39:8000/postgres?ssl=true&sslmode=REQUIRE");
+          "r2dbc:gaussdb://GaussdbExamples:Gaussdb-Examples-123@localhost:8000/postgres?ssl=true&sslmode=REQUIRE");
 
       Publisher<? extends Connection> connectionPublisher = connectionFactory.create();
 
@@ -48,7 +48,7 @@ public class SSLConnectionExample {
       // Example 2: Use sslmode=VERIFY_CA
       CountDownLatch countDownLatch2 = new CountDownLatch(1);
       connectionFactory = ConnectionFactories.get(
-          "r2dbc:gaussdb://GaussdbExamples:Gaussdb-Examples-123@139.9.208.39:8000/postgres?ssl=true&sslmode=VERIFY_CA"
+          "r2dbc:gaussdb://GaussdbExamples:Gaussdb-Examples-123@localhost:8000/postgres?ssl=true&sslmode=VERIFY_CA"
               + "&sslRootCert=ca.pem");
 
       connectionPublisher = connectionFactory.create();
