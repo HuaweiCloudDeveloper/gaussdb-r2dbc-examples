@@ -9,6 +9,13 @@
 
 运行例子前需要[通过镜像安装OpenGauss](#通过镜像安装OpenGauss) 
 
+# SSLConnectionExample
+
+这个例子介绍SSL连接的基础使用方法。
+
+运行例子前，数据库需要启用SSL，并获取数据库提供的证书ca.pem。如果通过华为云购买GaussDB云数据库，默认
+就已经启用SSL，可以从界面直接下载ca.pem。
+
 # 通过镜像安装OpenGauss
 
 ```shell
