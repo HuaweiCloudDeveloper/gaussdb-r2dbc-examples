@@ -36,7 +36,7 @@
             <dependency>
                 <groupId>com.huaweicloud.gaussdb</groupId>
                 <artifactId>gaussdb-r2dbc</artifactId>
-                <version>1.0.0.RC1</version>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
